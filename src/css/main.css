@@ -1,0 +1,47 @@
+:root {
+  --color-maker-yellow: #FACD00;
+}
+
+@font-face {
+  font-family: SuperMarioMakerExtended;
+  font-weight: 400;
+  src: url(../fonts/super-mario-maker-extended.ttf);
+}
+
+html {
+  background-color: var(--color-maker-yellow);
+  font-family: SuperMarioMakerExtended, sans-serif;
+  font-size: 0.0625em;
+  text-transform: uppercase;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0;
+  font-size: 72rem;
+  transition: font-size .5s ease;
+}
+
+@media screen and (max-width: 715px) {
+  h1 {
+    font-size: 23rem;
+  }
+}
+
+h1 > span {
+  display: block;
+  font-size: 0.8em;
+}
